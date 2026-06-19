@@ -1,0 +1,15 @@
+{
+  "tape measure":      "low",
+  "hammer":            "low",
+  "screwdriver":       "low",
+  "spirit level":      "low",
+  "hand saw":          "low",
+  "adjustable wrench": "low",
+  "pliers":            "low",
+  "pipe cutter":       "low",
+  "power drill":       "medium",
+  "sander":            "medium",
+  "circular saw":      "high",
+  "chainsaw":          "high",
+  "angle grinder":     "high"
+}

@@ -1,0 +1,6 @@
+{
+  "Hang a picture":    ["tape measure", "hammer", "screwdriver", "spirit level"],
+  "Build a planter box": ["tape measure", "hand saw", "power drill", "screwdriver", "sander"],
+  "Fix a leaky pipe":  ["adjustable wrench", "pliers", "screwdriver", "pipe cutter"],
+  "Build a bookshelf": ["tape measure", "hand saw", "power drill", "sander", "screwdriver", "circular saw"]
+}

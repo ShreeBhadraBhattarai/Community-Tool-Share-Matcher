@@ -1,0 +1,202 @@
+[
+  {
+    "id": "L001",
+    "name": "Anna Hofer",
+    "latitude": 48.2082,
+    "longitude": 16.3738,
+    "tools": ["power drill", "tape measure", "hammer"],
+    "completed_loans": 14,
+    "rating": 5.0,
+    "availability": true
+  },
+  {
+    "id": "L002",
+    "name": "Karl Brunner",
+    "latitude": 48.2183,
+    "longitude": 16.393,
+    "tools": ["hand saw", "sander", "screwdriver"],
+    "completed_loans": 3,
+    "rating": 4.8,
+    "availability": true
+  },
+  {
+    "id": "L003",
+    "name": "Maria Steiner",
+    "latitude": 48.1985,
+    "longitude": 16.392,
+    "tools": ["tape measure", "spirit level", "screwdriver", "pliers"],
+    "completed_loans": 21,
+    "rating": 4.9,
+    "availability": true
+  },
+  {
+    "id": "L004",
+    "name": "Thomas Gruber",
+    "latitude": 48.1937,
+    "longitude": 16.3685,
+    "tools": ["power drill", "sander", "circular saw"],
+    "completed_loans": 9,
+    "rating": 4.7,
+    "availability": false
+  },
+  {
+    "id": "L005",
+    "name": "Elisabeth Wagner",
+    "latitude": 48.1985,
+    "longitude": 16.352,
+    "tools": ["tape measure", "hammer", "hand saw", "screwdriver"],
+    "completed_loans": 18,
+    "rating": 4.9,
+    "availability": true
+  },
+  {
+    "id": "L006",
+    "name": "Franz Bauer",
+    "latitude": 48.203,
+    "longitude": 16.352,
+    "tools": ["adjustable wrench", "pliers", "pipe cutter"],
+    "completed_loans": 2,
+    "rating": 4.6,
+    "availability": true
+  },
+  {
+    "id": "L007",
+    "name": "Hanna Schmidt",
+    "latitude": 48.21,
+    "longitude": 16.352,
+    "tools": ["screwdriver", "spirit level", "tape measure"],
+    "completed_loans": 11,
+    "rating": 5.0,
+    "availability": true
+  },
+  {
+    "id": "L008",
+    "name": "Josef Mayer",
+    "latitude": 48.22,
+    "longitude": 16.357,
+    "tools": ["power drill", "hand saw", "sander", "tape measure"],
+    "completed_loans": 27,
+    "rating": 4.8,
+    "availability": true
+  },
+  {
+    "id": "L009",
+    "name": "Sabine Fischer",
+    "latitude": 48.173,
+    "longitude": 16.375,
+    "tools": ["hammer", "screwdriver", "pliers"],
+    "completed_loans": 6,
+    "rating": 4.7,
+    "availability": true
+  },
+  {
+    "id": "L010",
+    "name": "Michael Huber",
+    "latitude": 48.173,
+    "longitude": 16.42,
+    "tools": ["tape measure", "power drill", "circular saw", "angle grinder"],
+    "completed_loans": 33,
+    "rating": 4.9,
+    "availability": false
+  },
+  {
+    "id": "L011",
+    "name": "Claudia Wolf",
+    "latitude": 48.173,
+    "longitude": 16.327,
+    "tools": ["hand saw", "sander", "screwdriver", "tape measure"],
+    "completed_loans": 8,
+    "rating": 4.8,
+    "availability": true
+  },
+  {
+    "id": "L012",
+    "name": "Peter Müller",
+    "latitude": 48.178,
+    "longitude": 16.287,
+    "tools": ["adjustable wrench", "pipe cutter", "pliers"],
+    "completed_loans": 15,
+    "rating": 4.9,
+    "availability": true
+  },
+  {
+    "id": "L013",
+    "name": "Andrea Pichler",
+    "latitude": 48.202,
+    "longitude": 16.287,
+    "tools": ["tape measure", "screwdriver", "spirit level"],
+    "completed_loans": 4,
+    "rating": 4.7,
+    "availability": true
+  },
+  {
+    "id": "L014",
+    "name": "Martin Reiter",
+    "latitude": 48.1967,
+    "longitude": 16.327,
+    "tools": ["power drill", "sander", "hand saw"],
+    "completed_loans": 12,
+    "rating": 4.8,
+    "availability": true
+  },
+  {
+    "id": "L015",
+    "name": "Petra Kofler",
+    "latitude": 48.215,
+    "longitude": 16.31,
+    "tools": ["hammer", "tape measure", "screwdriver", "pliers"],
+    "completed_loans": 7,
+    "rating": 5.0,
+    "availability": true
+  },
+  {
+    "id": "L016",
+    "name": "Stefan Wimmer",
+    "latitude": 48.2267,
+    "longitude": 16.305,
+    "tools": ["hand saw", "circular saw", "angle grinder"],
+    "completed_loans": 19,
+    "rating": 4.6,
+    "availability": true
+  },
+  {
+    "id": "L017",
+    "name": "Christine Haas",
+    "latitude": 48.2317,
+    "longitude": 16.335,
+    "tools": ["tape measure", "screwdriver", "sander"],
+    "completed_loans": 1,
+    "rating": 4.9,
+    "availability": true
+  },
+  {
+    "id": "L018",
+    "name": "Gerhard Leitner",
+    "latitude": 48.2667,
+    "longitude": 16.355,
+    "tools": ["power drill", "hammer", "tape measure", "spirit level"],
+    "completed_loans": 30,
+    "rating": 5.0,
+    "availability": false
+  },
+  {
+    "id": "L019",
+    "name": "Renate Schwarz",
+    "latitude": 48.235,
+    "longitude": 16.378,
+    "tools": ["screwdriver", "pliers", "adjustable wrench", "pipe cutter"],
+    "completed_loans": 22,
+    "rating": 4.8,
+    "availability": true
+  },
+  {
+    "id": "L020",
+    "name": "Klaus Bergmann",
+    "latitude": 48.265,
+    "longitude": 16.405,
+    "tools": ["power drill", "sander", "hand saw", "tape measure"],
+    "completed_loans": 10,
+    "rating": 4.7,
+    "availability": true
+  }
+]
