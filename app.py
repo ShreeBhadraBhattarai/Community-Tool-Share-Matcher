@@ -37,6 +37,30 @@ html, body, [class*="css"]      { font-family: 'Sora', sans-serif; }
 h1, h2, h3, h4, h5, h6          { font-family: 'Sora', sans-serif; }
 h2, h3        { color: #97BC62 !important; }
 .stCaption p  { color: #5A7A6A !important; }
+
+/* -------------------------------------------------------------------------
+   Equal-height recommendation cards (applies to EVERY tool row).
+   Each row is wrapped in st.container(key="rec_row_<tool>") -> the prefix
+   selector below scopes these rules to those rows only, so the chat/form
+   column layouts are left untouched.
+
+   - the row is a flex row that stretches its columns to equal height
+   - each column becomes a flex column filling that height
+   - the card (st.markdown) grows to fill, pinning the button (the next
+     widget) to the bottom so the "Request to borrow" buttons line up
+   ------------------------------------------------------------------------- */
+[class*="st-key-rec_row_"] [data-testid="stHorizontalBlock"] {
+    align-items: stretch;
+}
+[class*="st-key-rec_row_"] [data-testid="stColumn"] > [data-testid="stVerticalBlock"] {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+[class*="st-key-rec_row_"] [data-testid="stColumn"] [data-testid="stMarkdown"] {
+    flex: 1 1 auto;
+    display: flex;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -335,9 +359,13 @@ def render_card(lender, tool):
 
     explanation = make_explanation(lender, tool)
 
+    # The card is a flex column that fills the full (equal) height of its
+    # column; the description block gets flex:1 so it absorbs any extra space,
+    # keeping every card's bottom edge — and the button below it — aligned.
     html = f"""
     <div style="border:1px solid #97BC62; border-radius:8px; padding:14px;
-                margin-bottom:10px; background:#1E2D28;">
+                margin-bottom:10px; background:#1E2D28;
+                display:flex; flex-direction:column; flex:1 1 auto; width:100%;">
       <p style="margin:0 0 8px 0;">
         <span style="color:#FFFFFF; font-weight:700;">{lender['name']}</span>{new_pill}
       </p>
@@ -346,7 +374,7 @@ def render_card(lender, tool):
         <span style="{chip}">✅ {lender['completed_loans']} loans · {lender['rating']}</span>
         <span style="{chip}">🌱 saves ~{lender['co2_saving_kg']} kg</span>
       </div>
-      <p style="margin:0; font-style:italic; font-size:0.88em; color:#5A7A6A;">
+      <p style="margin:0; flex:1 1 auto; font-style:italic; font-size:0.88em; color:#5A7A6A;">
         {explanation}
       </p>
     </div>
@@ -443,11 +471,14 @@ def show_recommendations(results):
             st.info("No available lenders found for this tool.")
             continue
 
-        # st.columns(n) creates n equal-width columns; zip stops at the shorter list
-        cols = st.columns(len(lenders))
-        for col, lender in zip(cols, lenders):
-            with col:
-                render_card(lender, tool)
+        # st.columns(n) creates n equal-width columns; zip stops at the shorter list.
+        # Wrap the row in a keyed container so the equal-height CSS above (scoped
+        # to .st-key-rec_row_*) targets these cards without touching other layouts.
+        with st.container(key=f"rec_row_{tool.replace(' ', '_')}"):
+            cols = st.columns(len(lenders))
+            for col, lender in zip(cols, lenders):
+                with col:
+                    render_card(lender, tool)
 
         # If the user opened a chat for a lender in THIS tool's row, show the
         # conversation full-width directly beneath the row of cards.
