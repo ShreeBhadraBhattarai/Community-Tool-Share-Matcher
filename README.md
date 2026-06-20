@@ -78,4 +78,4 @@ Alternatively, try the [live demo](https://community-tool-share-matcher.streamli
 | `app.py` | Streamlit UI — imports from `recommender.py` and renders all three screens |
 | `requirements.txt` | Python package dependencies (`streamlit`, `pandas`) |
 | `run_prototype.sh` | One-command convenience script: installs dependencies then starts the app |
-| `CLAUDE.md` | Development notes for the AI assistant used to build this prototype |
+
