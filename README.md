@@ -4,6 +4,8 @@ A web app that recommends borrowing tools from neighbours instead of buying them
 The user picks a DIY project; the app shows which tools are needed, nearby lenders
 who have each tool, and the estimated CO₂ saved by borrowing rather than buying new.
 
+🔗 **Live demo:** [community-tool-share-matcher.streamlit.app](https://community-tool-share-matcher.streamlit.app)
+
 > **All data is entirely mock and randomly invented. No real users, lenders, or
 > locations are represented. This is a course prototype.**
 
@@ -42,13 +44,14 @@ bash run_prototype.sh
 
 Both options open the app at `http://localhost:8501` in your browser.
 
+Alternatively, try the [live demo](https://community-tool-share-matcher.streamlit.app) — no setup needed.
+
 ---
 
 ## What you will see
 
 1. **Screen 1 — Project input**: pick one of four DIY projects from a dropdown and
    click "Find lenders near me".
-
 2. **Screen 2 — Recommendations**: for each tool the project needs, up to three
    lender cards appear (name, distance, rating, CO₂ saving, plain-English
    explanation). Tools are colour-coded by risk tier:
@@ -57,7 +60,6 @@ Both options open the app at `http://localhost:8501` in your browser.
    - 🔴 **High risk** — no neighbour cards; a safety notice and a link to
      instructional material are shown instead, plus a suggestion to use a
      staffed tool library.
-
 3. **Screen 3 — CO₂ impact**: a summary of total CO₂ saved by borrowing the
    low- and medium-risk tools from neighbours (high-risk tools are excluded from
    this total because the user goes to a staffed library, not a neighbour).
@@ -76,4 +78,4 @@ Both options open the app at `http://localhost:8501` in your browser.
 | `app.py` | Streamlit UI — imports from `recommender.py` and renders all three screens |
 | `requirements.txt` | Python package dependencies (`streamlit`, `pandas`) |
 | `run_prototype.sh` | One-command convenience script: installs dependencies then starts the app |
-
+| `CLAUDE.md` | Development notes for the AI assistant used to build this prototype |
